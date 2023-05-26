@@ -2,9 +2,62 @@
 <html>
   <head>
     <title>Varun careers</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+      h1 {
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: rgb(59,59,65);
+        text-align: center;
+      }
+
+      #banner {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-size: 32px;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: rgb(109,109,119);
+        text-align: center;
+      }
+
+      .bodytext {
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: rgb(80,80,80);
+        text-align: center;
+      }
+
+      #container {
+        max-width: 840px;
+        margin: 0 auto;
+      }
+
+      #copyright {
+        font-size: 12px;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body>
-    Hello there, you will learn about the job openings in Varun.INC here
+  <body>    
+    <div id = "container">
+      <h1>Varun Careers</h1>  
+      <img id = "banner" src="https://varun-careers-practice--varun2357.repl.co/static/banner.jpg" >
+      <h2>About us</h2>
+      <p class="bodytext">
+        Welcome to Varun.Inc, your one-stop destination for unbiased software evaluations and comparisons. Our expert team thoroughly researches and analyzes a wide range of software solutions, providing you with accurate and up-to-date information. With our user-friendly interface, you can easily access detailed reviews and side-by-side comparisons, helping you make informed decisions. Whether you need project management tools, CRM software, or accounting systems, Varun.Inc simplifies your selection process. Trust us to save you time and resources, and guide you towards the perfect software solution for your business needs. Join our community today and make confident choices for your software requirements.
+      </p>    
+      <h2>Open positions</h2>
+      <p class="bodytext">TODO - Show jobs here</p>    
+      <div style="text-align: center;">
+        <button>Contact us</button>
+      </div>
+      <p id = "copyright">Copyright 2023, Varun</p>
+    </div>
   </body>
 </html>
