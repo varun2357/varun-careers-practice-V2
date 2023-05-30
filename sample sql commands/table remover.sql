@@ -1,0 +1,3 @@
+DELETE FROM jobs;
+
+DROP TABLE jobs;
