@@ -17,3 +17,17 @@ def load_jobs_from_db():
     for row in result_all:
       jobs.append(dict(zip(column_names, row)))
     return jobs
+
+
+def load_job_from_db(id):
+  with engine.connect() as conn:
+    result = conn.execute(text("SELECT * FROM jobs"))
+    result_all = result.fetchall()
+    column_names = result.keys()
+    total_rows = result.rowcount
+    if (total_rows < int(id)) or (int(id) < 1):
+      return None
+    else:
+      job = dict(zip(column_names, result_all[int(id)-1]))
+      return job
+  

@@ -4,14 +4,14 @@ CREATE TABLE jobs (
     location VARCHAR(250) NOT NULL,
     salary INT,
     currency varchar(10),
-    resposibilities VARCHAR(2000),
+    responsibilities VARCHAR(2000),
     requirements VARCHAR(2000),
     created_at timestamp default current_timestamp,
     updated_at timestamp default current_timestamp on update current_timestamp,
     PRIMARY KEY (id)
 );
 
-INSERT INTO jobs (title, location, salary, currency, resposibilities, requirements)
+INSERT INTO jobs (title, location, salary, currency, responsibilities, requirements)
 VALUES
     ('Software Developer', 'New York', 80000, 'USD', 'Develop and maintain software applications.', 'Bachelor\'s degree in Computer Science.'),
     ('Marketing Specialist', 'London', 50000, 'GBP', 'Plan and execute marketing campaigns.', '2+ years of experience in digital marketing.'),
