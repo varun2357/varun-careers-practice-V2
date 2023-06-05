@@ -12,3 +12,6 @@
 
  query2 = "INSERT INTO applications (job_id, full_name, email, linkedin_url, education, work_experience, resume_url) VALUES ("+ id + ",3,3,3,4,6,7)"
     query = text(query2)
+    
+    
+    + "," 
